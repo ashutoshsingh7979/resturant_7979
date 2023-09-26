@@ -21,7 +21,7 @@
     <section id="Home">
       <nav>
         <div class="logo">
-        <p style="font-size: 30px;"> <img class="logo" src="image\aks2.jpg" alt="error">RESTAURANT</p> 
+        <p style="font-size: 30px;"> <img class="logo" src="image\aks2.jpg" alt="error">RESTAURANT</p>  
         </div>
         <!-- <h1>AKS RESTURANT</h1> -->
       </nav>
@@ -56,12 +56,7 @@
           <div class="aa"><h1><<<span>About</span>Us>></h1></div>
           <h3><span>OUR</span> Story</h3>
           <p>
-          <b><i> Founded in [Year], [Restaurant Name] has been a culinary cornerstone
-            in [City or Location] for [Number of Years] years. Our journey began
-            with a simple vision: to offer a place where food lovers could
-            indulge in the finest flavors, expertly prepared by our skilled
-            chefs. Over the years, we've evolved, but our dedication to culinary
-            excellence remains unwavering.</i></b> 
+          <b><i> Established in [Year], [Restaurant Name] has been a culinary staple in [City or Location] for [Number of Years]. From the outset, our vision was clear: to provide a haven for food enthusiasts to savor exceptional flavors crafted by our talented chefs. As we've grown, our commitment to excellence has remained steadfast..</i></b> 
           </p>
           <h3><span>OUR</span> Philosophy</h3>
           <b><i>
@@ -557,24 +552,5 @@
     </div>
     </footer>
   </body>
-  <script>
-  const teamBoxes = document.querySelectorAll('.team_box');
-
-function adjustLayout() {
-  teamBoxes.forEach(teamBox => {
-    if (window.innerWidth <= 1024) { // Adjust to the iPad's portrait mode width
-      teamBox.style.gridTemplateColumns = '1fr'; // Set to a single column layout
-    } else {
-      teamBox.style.gridTemplateColumns = 'repeat(auto-fit, minmax(20rem, 1fr))'; // Reset to your original grid layout
-    }
-  });
-}
-
-// Initial adjustment on page load
-adjustLayout();
-
-// Listen for window resize events
-window.addEventListener('resize', adjustLayout);
-
-  </script>
+ 
 </html>
