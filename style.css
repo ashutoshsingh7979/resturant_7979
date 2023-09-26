@@ -34,7 +34,7 @@ body {
 
 section {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 10px;
 }
 
@@ -111,7 +111,7 @@ section .main {
 section .main .men_text h1 {
   margin: 20px 0; 
   color: red;
-  font-family: mv boli;
+  font-family: 'Poppins', sans-serif;
   line-height: 62px;
   font-size: 40px; 
   text-align: center; 
@@ -192,7 +192,7 @@ section .main_btn:hover i {
 .about .about_main .about_text h1 span {
   color: red;
   margin-right: 15px;
-  font-family: mv boli;
+  font-family: 'Poppins', sans-serif;
   position: relative;
   /* left: -55%; */
 }
@@ -204,7 +204,8 @@ section .main_btn:hover i {
 .about .about_main .about_text h3 span {
   color: red;
   font-size: 50px;
-  font-family: mv boli;
+  font-family: 'Poppins', sans-serif;
+
 }
 .about .about_main .about_text h1 {
   font-size: 55px;
@@ -225,7 +226,8 @@ section .main_btn:hover i {
   margin-right: 50px;
   font-size: 15px;
   line-height: 22px;
-  font-family: system-ui;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .about .about_btn {
@@ -252,6 +254,7 @@ section .main_btn:hover i {
   border-radius: 20%;
   margin: .2rem;
   padding: 2.5rem;
+  height: auto;
 }
 .menu h1 {
   font-size: 65px;
@@ -265,7 +268,7 @@ section .main_btn:hover i {
 .menu h1 span {
   color: red;
   margin-left: 15px;
-  font-family: mv boli;
+  font-family: 'Poppins', sans-serif;
 }
 
 .menu h1 span::after {
@@ -278,8 +281,8 @@ section .main_btn:hover i {
   bottom: 15px;
 }
 .menu .menu_box .menu_card .menu_image {
-  width: 300px;
-  height: 245px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -337,11 +340,12 @@ section .main_btn:hover i {
 .menu .menu_box .menu_card .menu_info h2 {
   width: 60%;
  position: relative;
- left: 25%;
- top: -30px;
+ left:4.5rem;
+ top: -4rem;
   font-size: 48px;
   color: red;
-  font-family: mv boli;
+  font-family: 'Poppins', sans-serif;
+  font-style: oblique;
 }
 .menu_card{
     background-color: rgb(126, 240, 238);
@@ -352,7 +356,7 @@ section .main_btn:hover i {
   left: 5%;
   justify-content: center;
   font-weight: bold;
-  margin-top: -5px;
+  margin-top: -3rem;
   line-height: 20px;
   font-size: 15px;
   list-style-type: width;
@@ -408,7 +412,7 @@ section .main_btn:hover i {
 .order h1 span {
   color: red;
   margin-right: 15px;
-  font-family: mv boli;
+  font-family: 'Poppins', sans-serif;
 }
 
 .order h1 span::after {
@@ -475,6 +479,7 @@ section .main_btn:hover i {
   background-image: url(image/bg1.jpg);
   background-size: cover;
   background-position: center;
+  margin-top: 10vh;
 }
 
 .team h1 {
@@ -488,7 +493,7 @@ section .main_btn:hover i {
 .team h1 span {
   color: red;
   margin-left: 15px;
-  font-family: mv boli;
+  font-family: 'Poppins', sans-serif;
 }
 
 .team h1 span::after {
@@ -595,7 +600,7 @@ footer {
 
 .footer_tag h2 {
   color: rgb(23, 188, 133);
-  font-family: mv boli;
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
   margin-bottom: 10px;
 }
@@ -638,9 +643,11 @@ footer {
   }
   section {
     padding: 3rem 2rem;
+    height: 100%;
   }
   section .main {
     width: 90%;
+    height: 200%;
     margin: 10px;
   }
 
@@ -649,11 +656,13 @@ footer {
     top: 5%;
     font-size: 10px;
     line-height: 20px;
+    margin-bottom: 5rem;
+
   }
 
   section .main .main_image img {
     position: relative;
-    left: 7%;
+    left: 1rem;
     width: 100%;
   }
 
@@ -661,44 +670,71 @@ footer {
     position: relative;
     line-height: 18px;
     width: 100%;
-    left: -25%;
+    left: 1rem;
     top: -10px;
     font-size: 20px;
   }
 
   .about .about_main .image img {
-    width: 100%;
+    width: 40rem;
     top: 0;
   }
 
   .about .about_main {
     flex-direction: column;
     height: 100%;
+    position: relative;
+    top: 1rem;
   }
-
+  .about .about_main .about_text{
+    position: relative;
+    top: 5rem;
+  }
   .about .about_main .about_text h1 {
-    font-size: 50px;
+    font-size: 40px;
     bottom: 20px;
     position: relative;
-    left: 55%;
-  }
+    left:24rem; 
+}
+
 
   .about .about_main .about_text h3 {
-    font-size: 30px;
-    margin: 0 0 20px 0;
+    font-size: 25px;
+    position: relative;
+    left:3rem;
+  }
+  .about .about_main .about_text h3 span{
+    font-size: 35px;
   }
 
   .about .about_main .about_text p {
     width: 90%;
     font-size: 10.1px;
-    margin-right: 2px;
+    margin-right: 4px;
   }
 
   .about .about_btn {
     left: 0;
     margin-top: 20px;
   }
-
+  .menu{
+    position: relative;
+    top:12rem ;
+  }
+  .menu .menu_box .menu_card .menu_info h2{
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+  }
+  .menu .menu_box .menu_card .menu_info h3{
+   font-size: 3rem;
+  }
+  .menu .menu_box .menu_card .menu_info p{
+    font-size: 2rem;
+  }
+  .order{
+    margin-top: 10rem;
+  }
   .order h1 {
     font-size: 40px;
   }
@@ -720,6 +756,7 @@ footer {
 
   .order .order_main form {
     grid-template-columns: 1fr;
+    /* margin-bottom: 20%; */
   }
 
   .order .order_main form .input input {
@@ -731,7 +768,10 @@ footer {
   }
 
   .team {
-    margin-top: 50%;
+    /* margin-top: 20vh; */
+   height: 100%;
+   position: relative;
+   top: 39rem;
   }
   
 
@@ -749,8 +789,8 @@ footer {
   }
 
   footer {
-    margin-top: 250%;
-    height: 400px;
+    margin-top: 40rem;
+    height: 20rem;
   }
 
   .footer_tag h2 {
@@ -763,9 +803,11 @@ footer {
 
   .end {
     font-size: 25px;
+    bottom: 0;
+
   }
 
   .footer_main {
-    height: 45%;
+    height: 15rem;
   }
 }
