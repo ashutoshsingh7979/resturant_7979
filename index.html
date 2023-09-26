@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AKS RESTURANT</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="/path-to-your-font-files/poppins.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -26,20 +28,20 @@
 
       <div class="main">
         <div class="men_text">
-          <h1>Get fresh food <br>in easy way</h1>
+          <i><h1>Welcome to AKS family</h1></i>
         </div>
 
         <div class="main_image">
           <img src="image\dippy3.jpg" />
         </div>
       </div>
-
-      <h3>
-        At <span class="box1">AKS restaurant</span>, we invite you to embark on
-        a delectable journey that tantalizes your taste buds and elevates your
-        dining experience to new heights. Nestled in the heart of [INDIA], our restaurant is a culinary haven renowned for its
-        exceptional cuisine, warm ambiance, and unparalleled service.
-      </h3>
+<b><i> <h3>
+  At <span class="box1">AKS restaurant</span>, we invite you to embark on
+  a delectable journey that tantalizes your taste buds and elevates your
+  dining experience to new heights. Nestled in the heart of [INDIA], our restaurant is a culinary haven renowned for its
+  exceptional cuisine, warm ambiance, and unparalleled service.
+</h3></i></b>
+     
     </section>
 
     <!--About-->
@@ -49,37 +51,37 @@
         <div class="image">
           <img src="image\aks2.jpg" />
         </div>
-
+ 
         <div class="about_text">
-          <h1><span>About</span>Us</h1>
+          <div class="aa"><h1><<<span>About</span>Us>></h1></div>
           <h3><span>OUR</span> Story</h3>
           <p>
-            Founded in [Year], [Restaurant Name] has been a culinary cornerstone
+          <b><i> Founded in [Year], [Restaurant Name] has been a culinary cornerstone
             in [City or Location] for [Number of Years] years. Our journey began
             with a simple vision: to offer a place where food lovers could
             indulge in the finest flavors, expertly prepared by our skilled
             chefs. Over the years, we've evolved, but our dedication to culinary
-            excellence remains unwavering.
+            excellence remains unwavering.</i></b> 
           </p>
           <h3><span>OUR</span> Philosophy</h3>
-          <p>
-            At [Restaurant Name], we believe that a great meal is more than just
-            food on a plate; it's an opportunity to create memories, forge
-            connections, and savor life's moments. Our mission is to provide you
-            with not only exceptional dishes but also a warm and welcoming
-            atmosphere that feels like home.
-          </p>
+          <b><i>
+            <p>
+              At [Restaurant Name], we believe that a great meal is more than just
+              food on a plate; it's an opportunity to create memories, forge
+              connections, and savor life's moments. Our mission is to provide you
+              with not only exceptional dishes but also a warm and welcoming
+              atmosphere that feels like home.
+            </p>
+          </i></b>
           <h3><span>SPECIAL</span> Features</h3>
-          <p>
+          <b><i> <p>
             Describe any unique or special features of your restaurant, such as
             a private dining room, outdoor patio, live music nights, or themed
             events. These features can set you apart and give potential diners a
             reason to visit.
-          </p>
+          </p></i></b> 
         </div>
       </div>
-
-      <!-- <a href="#" class="about_btn">Order Now</a> -->
     </div>
 
     <!--Menu-->
@@ -98,7 +100,7 @@
           </div>
 
           <div class="menu_info">
-            <h2>Buger</h2>
+            <h2>burger</h2>
             <p>
               "Indulge in our gourmet burger tantalizing blend of savory ingredients.
             </p>
@@ -229,7 +231,7 @@
           </div>
 
           <div class="menu_info">
-            <h2>Hot Dog</h2>
+            <h2>Hot_dog</h2>
             <p>
               Savor the classic taste of our hot dogs, a perfect blend of flavors.
             </p>
@@ -333,7 +335,7 @@
           </div>
 
           <div class="menu_info">
-            <h2>Ice Cream</h2>
+            <h2>Ice_Cream</h2>
             <p>
               Savor the cool and creamy delight of our handcrafted ice creams, pure bliss.
             </p>
@@ -448,10 +450,9 @@
     </div>
 
     <!--Team-->
-
+   
     <div class="team">
       <h1>Our<span>Team</span></h1>
-
       <div class="team_box">
         <div class="profile">
           <img src="image\chef1.png" />
@@ -542,7 +543,7 @@
         </div>
 
         <div class="footer_tag">
-          <h2>Follows</h2>
+          <h2>Follow</h2>
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -550,11 +551,30 @@
         </div>
       </div>
     <div class="box3">
-
-    </div>
       <p class="end">
         Created by<span></i>Ashutosh</span>
       </p>
+    </div>
     </footer>
   </body>
+  <script>
+  const teamBoxes = document.querySelectorAll('.team_box');
+
+function adjustLayout() {
+  teamBoxes.forEach(teamBox => {
+    if (window.innerWidth <= 1024) { // Adjust to the iPad's portrait mode width
+      teamBox.style.gridTemplateColumns = '1fr'; // Set to a single column layout
+    } else {
+      teamBox.style.gridTemplateColumns = 'repeat(auto-fit, minmax(20rem, 1fr))'; // Reset to your original grid layout
+    }
+  });
+}
+
+// Initial adjustment on page load
+adjustLayout();
+
+// Listen for window resize events
+window.addEventListener('resize', adjustLayout);
+
+  </script>
 </html>
